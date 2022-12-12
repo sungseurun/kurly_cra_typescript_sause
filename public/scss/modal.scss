@@ -1,0 +1,98 @@
+#wrap {
+   width:100%;
+   position:relative;
+   #modal {
+      width:100%;
+      height:42px;
+      background:rgb(95,0, 128);
+      &.on {
+         display: none;
+      }
+      .container {
+         width:1050px;
+         height:100%;
+         margin:0 auto;
+         position: relative;
+         a {
+            z-index: 1;
+            position: relative;
+            font-size: 14px;
+            display: flex;
+            width:100%;
+            height:100%;
+            color:#fff;
+            align-items: center;
+            justify-content: center;
+            strong {
+               font-weight: 600;
+            }
+         }
+         button {
+            position: absolute;
+            top:0;
+            right:0;
+            width:42px;
+            height:42px;
+            z-index: 2;
+            border:0;
+            background:none;
+            cursor: pointer;
+            img {
+               width:100%;
+            }
+         }
+      }
+   } 
+
+   // 인트로 모달창
+   #introModal {
+      background: rgba(0,0,0, 0);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      display: flex;
+      .container {
+         width: 440px;
+         height:585.500px + 60px;
+         border-radius: 10px;
+         overflow: hidden;
+         box-shadow: 6px 6px 10px 2px rgba(255,255,255, 0.09);
+         margin: auto;
+         .content {
+            width: 100%;
+            .img-box {
+               width: 100%;
+               a {
+                  width: 100%;
+                  display: block;
+                  img {
+                     width: 100%;
+                  }
+               }
+            }
+            .button-box {
+               width: 100%;
+               height: 60px;
+               border-top: 1px solid #fff;
+               display: flex;
+               button {
+                  width: 50%;
+                  height: 100%;
+                  border: 0;
+                  color: #333;
+                  font-size: 16px;
+                  font-weight: 600;
+                  background: #fff;
+                  cursor: pointer;
+                  &:nth-child(1){
+                     border-right: 1px solid #ddd;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
